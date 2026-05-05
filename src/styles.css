@@ -11,5 +11,7 @@ app-root {
 }
 @font-face{
     font-family: 'jungleFont';
-    src: url('./assets/fonts/junglefont.ttf')
+    src: url('./assets/fonts/junglefont.ttf');
+    font-family: 'jungleFont2';
+    src: url('./assets/fonts/GoblinOne-Regular.ttf')
 }
