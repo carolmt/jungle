@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { InfoPageComponent } from './info-page/info-page.component';
 
 export const routes: Routes = [
     {
@@ -8,15 +10,12 @@ export const routes: Routes = [
     },
     {
         path: 'home',
-        loadComponent: () =>
-            import('./home/home.component').then(
-                (c)=> c.HomeComponent
-            ),
+        component: HomeComponent,
+        title: 'Home',
     },
     {
-        path:'info',
-        loadComponent: () =>
-            import('./info-page/info-page.component').then(
-                (c)=> c.InfoPageComponent
-            ),    }   
+        path: 'info',
+        component: InfoPageComponent,
+        title: 'Info',
+    },
 ];
